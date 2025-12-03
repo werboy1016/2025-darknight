@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技能改版資訊一覽</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f3f4f6;
+        }
+
+        /* 自定義捲軸樣式 */
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-7xl mx-auto bg-white shadow-lg rounded-xl overflow-hidden">
+        
+        <!-- 標題區 -->
+        <div class="bg-slate-800 text-white p-6 md:p-8">
+            <h1 class="text-3xl md:text-4xl font-bold mb-3">技能改版詳細資訊</h1>
+            <p class="text-slate-300 text-base md:text-lg">各階級技能的調整內容、狀態與改版評價。</p>
+            <p class="text-slate-400 text-base mt-2 font-medium">製作編輯：編董不雷 BandonPlay</p>
+        </div>
+
+        <!-- 表格容器 (響應式滾動) -->
+        <div class="overflow-x-auto custom-scrollbar">
+            <table class="w-full text-left border-collapse min-w-[1000px]">
+                <thead>
+                    <tr class="bg-gray-100 text-gray-700 text-base uppercase tracking-wider border-b-2 border-gray-200">
+                        <th class="p-5 w-28 font-bold">階級</th>
+                        <th class="p-5 w-40 font-bold">狀態</th>
+                        <th class="p-5 w-60 font-bold">技能名稱</th>
+                        <th class="p-5 font-bold">技能重點效果</th>
+                        <th class="p-5 w-36 font-bold">評價</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-700 text-base divide-y divide-gray-100">
+
+                    <!-- 一般技能 -->
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="p-5 font-medium text-gray-500 text-lg">一般</td>
+                        <td class="p-5"></td>
+                        <td class="p-5 font-bold text-black text-xl">黑暗之劍</td>
+                        <td class="p-5 leading-relaxed text-lg">新增搶怪權，搶怪期間擊殺怪物會重置技能CD</td>
+                        <td class="p-5 text-yellow-500 tracking-widest text-lg">★★★★</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="p-5 font-medium text-gray-500 text-lg">一般</td>
+                        <td class="p-5"></td>
+                        <td class="p-5 font-bold text-black text-xl">暗黑之魂</td>
+                        <td class="p-5 leading-relaxed text-lg">無施法動作，攻擊時隨機累積鬼魂</td>
+                        <td class="p-5 text-yellow-500 tracking-widest text-lg">★★★★★</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="p-5 font-medium text-gray-500 text-lg">一般</td>
+                        <td class="p-5"></td>
+                        <td class="p-5 font-bold text-black text-xl">黑暗騎士</td>
+                        <td class="p-5 leading-relaxed text-lg">原：物理攻擊轉為魔法攻擊。攻擊機制調整 (值得留意是否與MR相關) </td>
+                        <td class="p-5 text-yellow-500 tracking-widest text-lg">★</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="p-5 font-medium text-gray-500 text-lg">一般</td>
+                        <td class="p-5"></td>
+                        <td class="p-5 font-bold text-black text-xl">暗黑之暈</td>
+                        <td class="p-5 leading-relaxed text-lg">技能傷害增加</td>
+                        <td class="p-5 text-yellow-500 tracking-widest text-lg">★★</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="p-5 font-medium text-gray-500 text-lg">一般</td>
+                        <td class="p-5">
+                            <span class="inline-block bg-teal-100 text-teal-800 text-sm px-3 py-1 rounded-full font-semibold border border-teal-200">新技能</span>
+                        </td>
+                        <td class="p-5 font-bold text-black text-xl">暗黑衝刺</td>
+                        <td class="p-5 leading-relaxed text-lg">移動/施法/攻擊+25%，血盟商人常駐4W名譽幣</td>
+                        <td class="p-5 text-yellow-500 tracking-widest text-lg">★★★★★</td>
+                    </tr>
+
+                    <!-- 英雄技能 -->
+                    <tr class="hover:bg-red-50/30 transition-colors">
+                        <td class="p-5 font-medium text-red-800 text-lg">英雄</td>
+                        <td class="p-5"></td>
+                        <td class="p-5 font-bold text-red-600 text-xl">暗黑之劍(復仇者)</td>
+                        <td class="p-5 leading-relaxed text-lg">原：2格攻擊，技能調整待測(技能平衡調整)</td>
+                        <td class="p-5 text-yellow-500 tracking-widest text-lg">★</td>
+                    </tr>
+                    <tr class="hover:bg-red-50/30 transition-colors">
+                        <td class="p-5 font-medium text-red-800 text-lg">英雄</td>
+                        <td class="p-5">
+                            <span class="inline-block bg-teal-100 text-teal-800 text-sm px-3 py-1 rounded-full font-semibold border border-teal-200">新技能</span>
+                        </td>
+                        <td class="p-5 font-bold text-red-600 text-xl">暗黑衝擊波</td>
+                        <td class="p-5 leading-relaxed text-lg">攻擊時隨機發動扇形衝擊波，回血約200，傷害待測</td>
+                        <td class="p-5 text-yellow-500 tracking-widest text-lg">★★★★★</td>
+                    </tr>
+                    <tr class="hover:bg-red-50/30 transition-colors">
+                        <td class="p-5 font-medium text-red-800 text-lg">英雄</td>
+                        <td class="p-5"></td>
+                        <td class="p-5 font-bold text-red-600 text-xl">暗黑之魂(復仇者)</td>
+                        <td class="p-5 leading-relaxed text-lg">無施法動作，攻擊1格內所有怪物，造成3次傷害，範圍8格/8隻怪</td>
+                        <td class="p-5 text-yellow-500 tracking-widest text-lg">★★★★★</td>
+                    </tr>
+                    <tr class="hover:bg-red-50/30 transition-colors">
+                        <td class="p-5 font-medium text-red-800 text-lg">英雄</td>
+                        <td class="p-5"></td>
+                        <td class="p-5 font-bold text-red-600 text-xl">暗黑不死</td>
+                        <td class="p-5 leading-relaxed text-lg">不死系傷害額外+9</td>
+                        <td class="p-5 text-yellow-500 tracking-widest text-lg">★★★★</td>
+                    </tr>
+                    <tr class="hover:bg-red-50/30 transition-colors">
+                        <td class="p-5 font-medium text-red-800 text-lg">英雄</td>
+                        <td class="p-5"></td>
+                        <td class="p-5 font-bold text-red-600 text-xl">復仇屏障(復仇者)</td>
+                        <td class="p-5 leading-relaxed text-lg">約CD10秒發動一次黑暗之劍</td>
+                        <td class="p-5 text-yellow-500 tracking-widest text-lg">★★★</td>
+                    </tr>
+                    <tr class="hover:bg-red-50/30 transition-colors">
+                        <td class="p-5 font-medium text-red-800 text-lg">英雄</td>
+                        <td class="p-5"></td>
+                        <td class="p-5 font-bold text-red-600 text-xl">幽冥防護</td>
+                        <td class="p-5 leading-relaxed text-lg">
+							<p>被動減傷改版後+5%，隨盾/臂甲階級提升傷害減少&遠距減少</p>
+							<p>(藍+2%減少/4%遠距減少，紅+3%減傷/6%遠距減少，依此類推)</p>
+						</td>
+                        <td class="p-5 text-yellow-500 tracking-widest text-lg">★★★★</td>
+                    </tr>
+
+                    <!-- 傳說技能 -->
+                    <tr class="hover:bg-purple-50/30 transition-colors">
+                        <td class="p-5 font-medium text-purple-800 text-lg">傳說</td>
+                        <td class="p-5"></td>
+                        <td class="p-5 font-bold text-purple-600 text-xl">黑暗次元</td>
+                        <td class="p-5 leading-relaxed text-lg">
+							<p>被動無視敵人減傷、PVP減傷(受自身等級影響)</p>
+							<p>衝刺提升到8格，指定目標時攻擊/施法速度降低並帶脫標效果</p>
+							<p>不使用 combo 時CD時間減少</p>
+						</td>
+                        <td class="p-5 text-yellow-500 tracking-widest text-lg">★★★★★</td>
+                    </tr>
+                    <tr class="hover:bg-purple-50/30 transition-colors">
+                        <td class="p-5 font-medium text-purple-800 text-lg">傳說</td>
+                        <td class="p-5"></td>
+                        <td class="p-5 font-bold text-purple-600 text-xl">黑暗騎士(復仇者)</td>
+                        <td class="p-5 leading-relaxed text-lg">原：攻速+10%、無視減少+10%，改動細節待測</td>
+                        <td class="p-5 text-yellow-500 tracking-widest text-lg">★</td>
+                    </tr>
+                    <tr class="hover:bg-purple-50/30 transition-colors">
+                        <td class="p-5 font-medium text-purple-800 text-lg">傳說</td>
+                        <td class="p-5"></td>
+                        <td class="p-5 font-bold text-purple-600 text-xl">暗黑之鏡(復仇者)</td>
+                        <td class="p-5 leading-relaxed text-lg">機率消除微控制狀態，機率隨副手等級影響機率</td>
+                        <td class="p-5 text-yellow-500 tracking-widest text-lg">★★★★</td>
+                    </tr>
+                    <tr class="hover:bg-purple-50/30 transition-colors">
+                        <td class="p-5 font-medium text-purple-800 text-lg">傳說</td>
+                        <td class="p-5">
+                            <span class="inline-block bg-teal-100 text-teal-800 text-sm px-3 py-1 rounded-full font-semibold border border-teal-200">新技能</span>
+                        </td>
+                        <td class="p-5 font-bold text-purple-600 text-xl">無效領域(復仇者)</td>
+                        <td class="p-5 leading-relaxed text-lg">
+							<p>300紫第一招，使用時迴避發射體攻擊，無視屬性傷害</p>
+							<p>就算在屏障外也PVE傷害減少(+5%)、機率使受到攻擊無效</p>
+						</td>
+                        <td class="p-5 text-yellow-500 tracking-widest text-lg">★★★★★</td>
+                    </tr>
+                    <tr class="hover:bg-purple-50/30 transition-colors">
+                        <td class="p-5 font-medium text-purple-800 text-lg">傳說</td>
+                        <td class="p-5 flex flex-col gap-2">
+                            <span class="inline-block bg-teal-100 text-teal-800 text-sm px-3 py-1 rounded-full font-semibold border border-teal-200 text-center">新技能</span>
+                            <span class="inline-block bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full font-semibold border border-indigo-200 text-center">血盟獨特紫技</span>
+                        </td>
+                        <td class="p-5 font-bold text-purple-600 text-xl">次元刀</td>
+                        <td class="p-5 leading-relaxed space-y-2 text-lg">
+                            <p>攻擊隨機發動"裂痕"侵蝕效果(共3階段)，造成週期性傷害(與近傷成正比)</p>
+                            <p>滿階時無法施放被動技能與武器技能，目標死亡後裂痕會自動轉移到下一個目標。</p>
+                            <p>3格攻擊距離</p>
+                        </td>
+                        <td class="p-5 text-yellow-500 tracking-widest text-lg">★★★★★</td>
+                    </tr>
+                    <tr class="hover:bg-purple-50/30 transition-colors">
+                        <td class="p-5 font-medium text-purple-800 text-lg">傳說</td>
+                        <td class="p-5">
+                            <span class="inline-block bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full font-semibold border border-indigo-200 text-center">商城獨特紫技</span>
+                        </td>
+                        <td class="p-5 font-bold text-purple-600 text-xl">變形怪王</td>
+                        <td class="p-5 leading-relaxed text-lg">改為每秒消耗4材料水晶，開啟時提高攻速/移速，強化暗黑衝擊波、暗黑不死，讓目標BUFF持續時間大幅降低。</td>
+                        <td class="p-5 text-yellow-500 tracking-widest text-lg">★★★★</td>
+                    </tr>
+
+                    <!-- 神話技能 -->
+                    <tr class="bg-gradient-to-r from-yellow-50 to-transparent hover:from-yellow-100 transition-colors">
+                        <td class="p-5 font-medium text-yellow-700 text-lg">神話</td>
+                        <td class="p-5"></td>
+                        <td class="p-5 font-bold text-yellow-600 text-xl drop-shadow-sm" style="text-shadow: 1px 1px 0px rgba(0,0,0,0.1);">卡呂普索</td>
+                        <td class="p-5 leading-relaxed text-lg">發動後在重力場內無法使用3段加速、無法使用技能，使用瞬移/回卷會在重力場範圍內。</td>
+                        <td class="p-5 text-yellow-500 tracking-widest text-lg">★★★★</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- 底部註解 -->
+        <div class="bg-gray-50 p-5 border-t border-gray-200 text-sm text-gray-500 flex justify-between items-center">
+            <span>更新日期: 2023.10.15</span>
+            <span>資料來源: 編董不雷BandonPlay</span>
+        </div>
+    </div>
+
+</body>
+</html>
